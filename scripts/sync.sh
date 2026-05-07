@@ -27,4 +27,4 @@ git add .
 git commit -m "Sync: $(date +'%Y-%m-%d %H:%M:%S')"
 git push origin main
 
-echo "✨ 绿格子 +1！GitHub 主页已同步。"
+echo "✨ GitHub 主页已同步。"
