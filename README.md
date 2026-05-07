@@ -10,6 +10,7 @@ Minimalist configuration for macOS.
 
 ## 📂 Project Structure
 ## 🔧 Highlights
+## 🔧 Highlights
 - **`trans`**: Unified translation utility with dynamic ANSI coloring.
 - **`vscode_theme.vim`**: A customized Neovim theme migrated from my VSCode era.
 
