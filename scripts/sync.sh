@@ -12,7 +12,7 @@ mkdir -p bin nvim/colors zsh
 cp ~/.local/bin/trans bin/ 2>/dev/null || true
 cp ~/.config/nvim/init.vim nvim/ 2>/dev/null || true
 cp ~/.config/nvim/colors/vscode_theme.vim nvim/colors/ 2>/dev/null || true
-cp ~/.zshrc zsh/.zshrc 2>/dev/null || true
+cp ~/.zshrc zsh/ 2>/dev/null || true
 
 echo "--- 正在生成目录树 ---"
 # 将树状图输出到临时文件
