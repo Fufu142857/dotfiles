@@ -2,7 +2,7 @@
 
 ### Wiritten by Gemini 3 pro 
 
-# Define Path
+# 定义路径
 DOT_DIR="$HOME/dotfiles"
 README="$DOT_DIR/README.md"
 
@@ -16,14 +16,25 @@ cp ~/.config/nvim/colors/vscode_theme.vim "$DOT_DIR/nvim/colors/"
 cp ~/.zshrc "$DOT_DIR/zsh/.zshrc"
 
 # 2. 生成实时目录树并更新 README
-# 使用 tree 命令
 echo "--- 正在更新 README 目录树 ---"
 TREE_OUTPUT=$(tree -I '.git|.gitignore|scripts' "$DOT_DIR")
 
-sed -i '' "//a\\
-\`\`\`text\\
-$TREE_OUTPUT\\
-\`\`\`" "$README"
+# 使用稳定跨平台的 awk 替换树状图区间
+awk -v tree="$TREE_OUTPUT" '
+BEGIN { skip = 0 }
+// {
+    print $0
+    print "```text"
+    print tree
+    print "```"
+    skip = 1
+    next
+}
+// {
+    skip = 0
+}
+!skip { print $0 }
+' "$README" > "$README.tmp" && mv "$README.tmp" "$README"
 
 # 3. 推送到 GitHub
 echo "--- 正在推送到远端 ---"
