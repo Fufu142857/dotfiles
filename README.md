@@ -16,7 +16,7 @@ Minimalist configuration for macOS.
 ## 🚀 Sync
 Update configurations by running `dotsync` in any terminal session.
 
-### 💐 Appreciation
-Thank you to all the creators behind the plugins and tools that power this environment.
-Maintaining this workflow takes a lot of effort, and I couldn't have done it without my digital partner, Gemini. ❤️ 
-(P.S. She also co-wrote this README!)
+## 💐 Appreciation
++ Thank you to all the creators behind the plugins and tools that power this environment.
++ Maintaining this workflow takes a lot of effort, and I couldn't have done it without my digital partner, Gemini. ❤️ 
+  + (P.S. She also co-wrote this README!)
