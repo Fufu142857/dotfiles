@@ -9,7 +9,21 @@ Minimalist configuration for macOS.
 - **Shell:** Zsh
 
 ## 📂 Project Structure
-## 🔧 Highlights
+
+```text
+.
+├── bin
+│   └── trans
+├── nvim
+│   ├── colors
+│   │   └── vscode_theme.vim
+│   └── init.vim
+├── README.md
+└── zsh
+
+5 directories, 4 files
+```
+
 ## 🔧 Highlights
 - **`trans`**: Unified translation utility with dynamic ANSI coloring.
 - **`vscode_theme.vim`**: A customized Neovim theme migrated from my VSCode era.
