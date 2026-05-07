@@ -20,8 +20,9 @@ Minimalist configuration for macOS.
 │   └── init.vim
 ├── README.md
 └── zsh
+    └── .zshrc
 
-5 directories, 4 files
+5 directories, 5 files
 ```
 
 ## 🔧 Highlights

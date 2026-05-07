@@ -16,7 +16,7 @@ cp ~/.zshrc zsh/ 2>/dev/null || true
 
 echo "--- 正在生成目录树 ---"
 # 将树状图输出到临时文件
-tree -I '.git|.gitignore|scripts|*.tmp' > tree.tmp
+tree -a -I '.git|.gitignore|scripts|*.tmp' > tree.tmp
 # 调用独立的 Python 脚本处理文本
 python3 scripts/update_readme.py
 # 删除临时文件
