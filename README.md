@@ -18,11 +18,10 @@ Minimalist configuration for macOS.
 │   ├── colors
 │   │   └── vscode_theme.vim
 │   └── init.vim
-├── README.md
 └── zsh
     └── .zshrc
 
-5 directories, 5 files
+5 directories, 4 files
 ```
 
 ## 🔧 Highlights
